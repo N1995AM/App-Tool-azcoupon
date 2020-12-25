@@ -1,0 +1,26 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "jquery.min.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon_disable.png",
+      "default_title": "Azcoupon"
+   },
+   "content_scripts": [ {
+      "js": [ "jquery.min.js", "content.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Installa l’estensione Azcoupon per scoprire i codici sconto attivi e le offerte dei negozi online mentre stai facendo shopping!",
+   "icons": {
+      "128": "icon_128.png",
+      "64": "icon_64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAws5d7uE65bunNIsSsBOIB9cnvrL+eGy/naCJDhO/shsKcfCtRXDIWbZ4IXJBn94yEKd7ZgODUgldJwshqFRZXAZHhOauFKdWzekKqMLcI/etWHVLE084sgpAK4KlfOyGMSX2BYoWtzr1MpQCRkBWQUknTZ7V2r0fSBRCovJfx335y0cIf18RzjYEz6osoXLdWkhSkvEpuxisSKJ5ZZKROyBfBsiLBFKGZFo1sS2IpoHtPUjeIzod7VYf+LqFbR/JezCkuaRG1zAqFEiXkBBgbg/e4rP5WslZxC2QYwqlfLzrfLsLNSbdD87B6qq6+bfJ7y2ldToFzmKjqmsQCZuUDwIDAQAB",
+   "manifest_version": 2,
+   "name": "Azcoupon",
+   "permissions": [ "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.2"
+}
