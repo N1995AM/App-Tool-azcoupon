@@ -17,6 +17,7 @@ var url = window.location.href;
 var el = document.createElement('a');
 el.href = url;
 var storeurl = el.host; 
+// input the API url that you need to connect 
 var serverurl = 'serversupport url';
 
 $.get( serverurl, {'url':storeurl},function(data, status){ 
